@@ -1,0 +1,97 @@
+@charset "utf-8";
+.section {
+position: relative;
+zoom: 1;
+}
+
+.sliders img {
+vertical-align: bottom;
+}
+
+.sliders * {
+margin: 0;
+padding: 0;
+}
+
+/*--------------
+ sliders用
+--------------*/
+.sliders {
+position: relative;
+}
+
+.sliders li {
+overflow: hidden;
+list-style-type: none;
+}
+
+.sliders li a img {
+border: 0;
+}
+
+.pager {
+padding: 10px 0;
+text-align: center;
+}
+
+.pager li {
+display: inline-block;
+*display: inline!important;
+list-style-type: none;
+zoom: 1;
+}
+
+.pager a {
+margin: 0 5px;
+display: block;
+width: 10px;
+height: 10px;
+background: url(img/pager_off.png) no-repeat left top;
+text-decoration: none;
+text-indent: -9999px;
+outline: none;
+}
+
+.pager a:hover,
+.pager .current a {
+color: red;
+text-decoration: none;
+background: url(img/pager_on.png) no-repeat left top;
+}
+
+.prev {
+margin-top: -25px;
+margin-left: -450px;
+width: 50px;
+height: 50px;
+position: absolute;
+top: 50%;
+left: 50%;
+background: url(img/prev_off.png) no-repeat left top;
+text-indent: -9999px;
+z-index: 50;
+cursor: pointer;
+}
+
+.prev:hover {
+background-image: url(img/prev_on.png);
+}
+
+.next {
+margin-top: -25px;
+margin-left: 400px;
+width: 50px;
+height: 50px;
+position: absolute;
+top: 50%;
+left: 50%;
+background: url(img/next_off.png) no-repeat left top;
+text-indent: -9999px;
+z-index: 50;
+cursor: pointer;
+}
+
+.next:hover {
+background-image: url(img/next_on.png);
+}
+

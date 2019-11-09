@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>スライドサンプル</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="sliders.js"></script>
+<script>
+$(function(){
+    $("#slide01").sliders({
+		slideType:'fadeSlide'
+	});
+	$("#slide02").sliders({
+		slideType:'leftSlide',
+		changeTime: 1500,
+		showTime: 3000
+	});
+	$("#slide03").sliders({
+		slideType:'leftSlideLoop',
+		changeTime: 1000,
+		showTime: 4000
+	});
+	$("#slide04").sliders({
+		slideType:'leftSlideAnimation',
+		allTime: 10000
+	});
+	$("#slide05").sliders({
+		slideType:'selectAnimation'
+	});
+	$("#slide06").sliders({
+		slideType:'moveOn',
+		animeType: 'linear'
+	});
+});
+</script>
+<link rel="stylesheet" href="sliders.css">
+<script type="text/javascript" src="/js/analysis.js"></script>
+</head>
+<body>
+
+<div class="section">
+<h2>1.フェードイン</h2>
+<div id="slide01">
+<ul>
+<li><a href="#"><img src="img/img01.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img02.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img03.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img04.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img05.gif" width="700" height="426" alt=""></a></li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<h2>2.スライド・ループ無し</h2>
+<div id="slide02">
+<ul>
+<li><a href="#"><img src="img/img06.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img07.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img08.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img09.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img10.gif" width="700" height="426" alt=""></a></li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<h2>3.スライド・ループ</h2>
+<div id="slide03">
+<ul>
+<li><a href="#"><img src="img/img11.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img12.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img13.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img14.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img15.gif" width="700" height="426" alt=""></a></li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<h2>4.常にスライド・ループ</h2>
+<div id="slide04">
+<ul>
+<li><a href="#"><img src="img/img16.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img17.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img18.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img19.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img20.gif" width="700" height="426" alt=""></a></li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<h2>5.次へ戻るボタンあり</h2>
+<div id="slide05">
+<ul>
+<li><a href="#"><img src="img/img21.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img22.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img23.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img24.gif" width="700" height="426" alt=""></a></li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<h2>6.重なるスライド</h2>
+<div id="slide06">
+<ul>
+<li><a href="#"><img src="img/img26.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img27.gif" width="700" height="426" alt=""></a></li>
+<li><a href="#"><img src="img/img28.gif" width="700" height="426" alt=""></a></li>
+</ul>
+</div>
+</div>
+
+
+<script type="text/javascript" src="/js/analysis.js"></script>
+
+</body>
+</html>
